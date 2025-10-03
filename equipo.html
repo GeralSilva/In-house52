@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Equipo - IN-HOUSE52 SENA CGMLTI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="equipo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.jpg">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo 1.png" alt="IN-HOUSE52 Logo" height='70' class="logo">
+            </div>
+            
+            <div class="nav-toggle">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header del Equipo -->
+    <section class="equipo-header">
+        <div class="container">
+            <div class="header-content">
+                <h1>Nuestro Equipo</h1>
+                <p>Conoce a los 22 talentosos profesionales que conforman IN-HOUSE52</p>
+                <div class="header-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">22</span>
+                        <span class="stat-label">Miembros</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Programas</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Proyectos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filtros del Equipo -->
+    <section class="equipo-filtros">
+        <div class="container">
+            <div class="filtros-container">
+                <button class="filtro-btn active" onclick="filterTeam('todos')">Todos</button>
+                <button class="filtro-btn" onclick="filterTeam('coordinacion')">Coordinación</button>
+                <button class="filtro-btn" onclick="filterTeam('comunicacion')">Comunicación Comercial</button>
+                <button class="filtro-btn" onclick="filterTeam('multimedia')">Medios Audiovisuales</button>
+                <button class="filtro-btn" onclick="filterTeam('animacion')">Animación 3D</button>
+                <button class="filtro-btn" onclick="filterTeam('software')">Desarrollo Software</button>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Álbum Panini del Equipo -->
+    <section class="equipo-album">
+        <div class="container">
+            <div class="album-container">
+                <div class="album-header">
+                    <h2>Álbum Digital IN-HOUSE52</h2>
+                    <p>Haz clic en cada carta para conocer más sobre nuestros miembros</p>
+                </div>
+                
+                <div class="album-grid" id="equipoGrid">
+
+                    <!-- Coordinación -->
+                    <div class="carta-miembro" data-programa="coordinacion" onclick="openMemberModal('coord1')">
+                        <div class="carta-inner">
+                            <div class="carta-front">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyl27JjyRAkxCcazse6geerPigk3Qy2fIUyNvOrDVr_xxSKa0plICrDIp5_BX4dqymlGH3ipMb3jRRX9VKQI6JiWlibl1u0062PBfY4Jn-lYX_3ojgIfZmYIf9OskviBmiYq-RHxB9ul6tiStCCzBSXHNPFqfBOGewNuMRC6rOkFYr7ewJtAzjn6f3PEg/s16000/FICHA-FELIPE.png" alt="Director">
+                                <div class="carta-info">
+                                    <h3>Felipe</h3>
+                                    <p>Coordinadora de Proyectos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carta-miembro" data-programa="coordinacion" onclick="openMemberModal('coord2')">
+                        <div class="carta-inner">
+                            <div class="carta-front">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrbjPMyXaddPbP-VKeQQgBpJntwrcfKfNboP9sP8ddLWpwrYhLATYQsKs0cdY4V2BA7C-7Z8yHH0LcoulR6ciHOiOpjfof9-ZDkOnVN8USBu2cKd9WWWJ8d_Xz9sdkTS1-nQ8ikGlD1OCly1WwcrqDqmNgx_-JVAj7OBtaJ7nbF7lpbcs1mGreg8P718k/s16000/FICHA-CATA.png" alt="Coordinadora">
+                                <div class="carta-info">
+                                    <h3>Catalina</h3>
+                                    <p>Coordinadora Comunicaciones</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="carta-miembro" data-programa="coordinacion" onclick="openMemberModal('coord3')">
+                        <div class="carta-inner">
+                            <div class="carta-front">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQP-x_RThUSXi47wxhiAAKm3l4b5AE7fzAqtvaRon2NEtCwMRj7FzEBH_HkeM2ZWhF5wI_vGHkBw9erI290PdLd6Q0iPKHfSfxTsV6dyjjYjNVK5rBp3Jo5tlraW17g0spMMnZRDFBXJrWuf_vliEWhv36GrfhKo8N76dO80TluEWmuQZP4DWeO_C2PdA/s16000/FICHA-WILL.png" alt="Coordinadora">
+                                <div class="carta-info">
+                                    <h3>Wilson</h3>
+                                    <p>Coordinadora Audiovisual</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="carta-miembro" data-programa="coordinacion" onclick="openMemberModal('coord4')">
+                        <div class="carta-inner">
+                            <div class="carta-front">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4F4MGnJc6gUokxSfs-joZoPaQXPCGX-XIzAXCqwx4ihMV127o4W9y9rwnmM1GYkLF6VFz3t-_NtlYXjQuBeX2tTZtn7VLYrJcFVLeF1VbIqYuwGzvqz1bgIq97zvuvd_InRG48FgCwQ5zKRwXvS4H6V_ggW-GtGu9dZ9h9m67NMhxoz3PtThl2tuJQOE/s16000/FICHA-DANIEL.png" alt="Coordinadora">
+                                <div class="carta-info">
+                                    <h3>Daniel</h3>
+                                    <p>Coordinadora Multimedia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="carta-miembro" data-programa="coordinacion" onclick="openMemberModal('coord5')">
+                        <div class="carta-inner">
+                            <div class="carta-front">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKlwOhDSuhi2t8Pdo1rhUClIvqSQhGoSKnYRO-VzT0AsarJrACayEYNGAIyR2mG3Tt76DLr32rGkICSd6UGRKs3j6ObB25mKp6oimJyS4crOO73mpw5hkKohh6W5qEjdilgmrOvkNAFr8m-mE3jVOZI3VWLFPEUfAcy7pTZMfl5LOITmStj38jOqBBBnM/s16000/FICHA-OLIVIA.png" alt="Coordinadora">
+                                <div class="carta-info">
+                                    <h3>Olivia</h3>
+                                    <p>Coordinadora General</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comunicación Comercial -->
+
+                     <div class="carta-miembro" data-programa="comunicacion" onclick="openMemberModal('com1')">
+                        <div class="carta-inner">
+                            <div class="carta-front">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlKZWCWs_Pe908qkXDzaUVvzPVXEVo85jMRlMFMN-a_zwt0o1KB1jhBGWLSLA0MFCGVy1QFAJocIA32gdzsKz2qbY0VI1WzGTbakKRy5y9xG-gL6vSzx9iTrkdDlmpRk7agQehS1lp5O8xCcw9lDTeIkmDX3z5B2Gla8yNndiE7piQOMPXLwPgRQF4JgtA/s16000/FICHA-JUANA.png" alt="Juana">
+                                <div class="carta-info">
+                                    <h3>Juana</h3>
+                                    <p>Especialista en Comunicación Comercial</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="carta-miembro" data-programa="comunicacion" onclick="openMemberModal('com2')">
+                        <div class="carta-inner">
+                            <div class="carta-front">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_LUDgXYM1X3xAy4MkjAKJzKD_XXxlu_JX1WmeCgoZhVXiJ84lZ4egVejNd5aI2pUnY076CToyFZ6sHiiuCCyOXSoMZFsQyz2MFe68fSVLk4ykfpLXJIt3b7HTbMztih0-92JoZmRem1QpoL4Kr_Kgo_pSeABteV-sLxmM6ASJA1yurzeJkSwxDNGyv-Y/s16000/FICHA-VAL.png" alt="Valentina">
+                                <div class="carta-info">
+                                    <h3>Valentina</h3>
+                                    <p>Coordinadora de Marketing</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carta-miembro" data-programa="comunicacion" onclick="openMemberModal('com3')">
+                        <div class="carta-inner">
+                            <div class="carta-front">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjClaO7gImxEa8iXu4Dxb1hD-HmHSsRGiSEHYqM-OCAhtUuVaUpk5xtH3dy4tLGWEZBJTvMZ73MGPfoonfaspQPEKFQwqSDOkvWTrhv7s5paPOsh4XHom_e2tsf2wJAI2lwXwX8SEOFJkZ1ADCoy2lY8BnWsqkE6fGbfqJCCNQ9EHbMwWiNRL3JoGkO1ek/s16000/FICHA-ANA.png" alt="Ana">
+                                <div class="carta-info">
+                                    <h3>Ana</h3>
+                                    <p>Estratega Digital</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                    <!-- Medios Audiovisuales -->
+                    <div class="carta-miembro" data-programa="multimedia" onclick="openMemberModal('mul1')">
+                        <div class="carta-inner">
+                            <div class="carta-front">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgRAhZdM4EToTsT9DHEeLszIutVdMNKp3Lf18TBSt7AIkOHuNM-72oMFcXOKVAahyphenhyphenoh8C1l3n0nNFtFkDYqw_t6fOtQ6lnD3ia3X__Sk0bKyAjZt_34rnKUbSkvomlqPuO_BWpBLebSz99DsMRbBsYV3QyLr2GeN2px3M3g3mqfqoQ_-0VPyd1RF-Hnns8/s16000/Captura%20de%20pantalla%202025-09-09%20142523.png" alt="Angie">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carta-miembro" data-programa="multimedia" onclick="openMemberModal('mul2')">
+                        <div class="carta-inner">
+                            <div class="carta-front">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYBZpbbSgC3bTIa2WlqQX5-EtV8tNvgUq1gcUwsYQbtZ37cRvWqvZniwl53KsFYOP7mtjD5L2OPIEAb-DMBjJsnERL13jinku6VKFu5ABckBIPoc79x6j2HqrVXLLSeu2P7-Kt4c4N6H13JiTpWlqSPhIYxJG7yZV5u5NOmva7NMxcmJpOJI_zaJooxwI/s16000/HELEN%20FICHA.png" alt="Helen">
+                                <div class="carta-info">
+                                    <h3>Helen</h3>
+                                    <p>Editor de Video</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carta-miembro" data-programa="multimedia" onclick="openMemberModal('mul3')">
+                        <div class="carta-inner">
+                            <div class="carta-front">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgOzinZTME6ovck1dQvOTTEWlXClPRL2USsYR3qRyO3qTI7q57zKkhRQJLyVsarsEzQirYN8hjesBsHmzj63oq_uL8U-1jRobpjz7hJCZg_f3PlVrH4OVq9jPWdxhkABOX8nV9x315I-Bh6_SDQnDcTmcxt4HzGD6n8NQDEbQBMmZKrFrKexON8rHKgko/s16000/FICHA-KENNER.png" alt="Kenner">
+                                <div class="carta-info">
+                                    <h3>Kanner</h3>
+                                    <p>Fotógrafo Digital</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carta-miembro" data-programa="multimedia" onclick="openMemberModal('mul5')">
+                        <div class="carta-inner">
+                            <div class="carta-front">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZSQpRO8xg9m4bcN9Q9uzDoFWI8QXG8oVHYK8y50xnMNlbKHNou3TlKAp5VpIdMvpTOOKC45oVj6R6ZBT2aFLnUOB3iPZVc6I0z0QNWLNyUi-I_4Y6k1b24ILBcTBBekGyaS1CXNveFLG_gtZ0chOBDES-jhCLA41cD3lHgmfui5VY4PETTTMYZ5agWDI/s16000/FICHA-JHON.png" alt="Jhon">
+                                <div class="carta-info">
+                                    <h3>Jhon</h3>
+                                    <p>Camarógrafo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carta-miembro" data-programa="multimedia" onclick="openMemberModal('mul4')">
+                        <div class="carta-inner">
+                            <div class="carta-front">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHw3dL6SuoghJwn5wjuSHLyGtL3SWZxAFp-A05IoOnQT4XGjVlDhR3MVOP2ycUctpuV5xoYJtOcmCuxHY9KeqH16o3CkhQNe5gEGsBrgkBT61lEoV8jAQdLUeraMSt7elrg1pJFqfkLXw0F32h643lY5QOu3iO6F_uHJ_60aNSO7jn3TJge-xKmJoU8KI/s16000/FICHA-BRAYAN.png" alt="Brayan">
+                                <div class="carta-info">
+                                    <h3>Brayan </h3>
+                                    <p>Especialista en Audio</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carta-miembro" data-programa="multimedia" onclick="openMemberModal('mul6')">
+                        <div class="carta-inner">
+                            <div class="carta-front">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnRNDfHVlGfNLxZLZ-TlcQT2fVhC_9lkce8hue6JRFU9XLcUywfHC2XSR_6VhOw91JguEEmEiy8axDd2nbJna_7Vvm_orZy_mt6piN-3SEQ6Ko7MtAi-oKA9apo54sDH9XUdbexV3bY5FtN74Z8VoDoxKYiz6BT2MqFOqklnnLnbsDFJGU1SZTqZac6zQ/s16000/FICHA-JAVIER.png" alt="Javier">
+                                <div class="carta-info">
+                                    <h3> Javier</h3>
+                                    <p>Diseñador Multimedia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carta-miembro" data-programa="multimedia" onclick="openMemberModal('mul7')">
+                        <div class="carta-inner">
+                            <div class="carta-front">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjF5EqSe8cHvNnARWkuFhfl91cCB7ATyPBRMNZAyFW4ULv1LunYwIGibT9M5GT3iZdHJVwbmDuYqaMoVBPywEqGLeoWO7akj49ggI6At71R0w1LkbeS1foW5cbPm1VwATRBbCFPM8b7-_vGNVq1FAzmbb6F4hsSSL3GSBYFws9jlKE8S9U1XkbwhoKjpxc/s16000/FICHA-CAMILO.png" alt="Camilo">
+                                <div class="carta-info">
+                                    <h3>Camilo</h3>
+                                    <p>Técnico Audiovisual</p>/|    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Animación 3D -->
+                    <div class="carta-miembro" data-programa="animacion" onclick="openMemberModal('ani1')">
+                        <div class="carta-inner">
+                            <div class="carta-front">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPE16AiMmkNxJEL25-pY4K3w2gYm3-3pbV4-A5PjG_EGKHEvaKeZS9xge2P1EUviAJ5CTQctNa9ENKgUJcHvGJH-M_NzoZ2amvDI1jwtSj2vBRCEKyEGd1QB-S9TB5jI7mhoSdrzC5OmLF5Ghz7pW8izvRNSELJE-KrAr81tpVwCSpGDqm_CTZiFYpmKE/s16000/FICHA%20NATALY.png" alt="Nathaly">
+                                <div class="carta-info">
+                                    <h3>Nathaly</h3>
+                                    <p>Animadora 3D</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carta-miembro" data-programa="animacion" onclick="openMemberModal('ani2')">
+                        <div class="carta-inner">
+                            <div class="carta-front">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivwW8YOxT29XBxBbp88LLRwlQc2ZX03XSw9Vh-tP4xGUakOSCUkxAn3p4NmhQ2NhRsX1nxvRynU2y1eOLqudofP0Y-mU2hXB1-ItwLPTK08OQ6p0DMBqSaLgzG8YN_e-eiD04V9Xm5CKhvhUW9zzJtvVSjV_RO06r9C0-PJQ5gwFpqgCyOGSalgskMJSKZ/s16000/IMG-20250911-WA0041.jpg" alt="Nicolas">
+                                <div class="carta-info">
+                                    <h3>Nicolas</h3>
+                                    <p>Modelador 3D</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carta-miembro" data-programa="animacion" onclick="openMemberModal('ani3')">
+                        <div class="carta-inner">
+                            <div class="carta-front">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhR9vqmUDlnsptlmHEpSBHzhRpyRJ8tAZpHqNfdu0HrioNyoDq19Q4_GQ0QOyXfi9BMF2s5-GyhphyOYbLJ6A5i0gyoYlO3Vhbwc18GNWrzdq5nO1QgnGvQpKUquCKTHIc_nvmaAg5kaUM9m26DyYczk5Mz8GmjDnliajt_fmU8jCS_1OjYEAoEiEJtjAo/s16000/FICHA-CLARA.png" alt="Clara">
+                                <div class="carta-info">
+                                    <h3>Clara</h3>
+                                    <p>Especialista en VFX</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carta-miembro" data-programa="animacion" onclick="openMemberModal('ani4')">
+                        <div class="carta-inner">
+                            <div class="carta-front">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIxrzvAS69QukShmqbP-rjE33MFbLq1nxX9823dBOUaBJSoX3EitOzVEF9HZzQR5UgXBKPSu-6H4-Qyq44ZX-vQtHTY6CvQtp_6e9qj67aLRBS2kJOFc7CKp0MAcy2KM8LClwGrh_rSuMC76jCwabUIeut-N7jszGDFO1PyAjSuHDd4dNRTo6TBsiG0plt/s16000/IMG-20250911-WA0047.jpg" alt="Sebastian">
+                                <div class="carta-info">
+                                    <h3>Sebastian</h3>
+                                    <p>Director de Arte 3D</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="carta-miembro" data-programa="animacion" onclick="openMemberModal('ani5')">
+                        <div class="carta-inner">
+                            <div class="carta-front">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjgJiEMS_4jOgdavbD2JKu2D4NymZ7u4xfEy-F-VBd0DdpQfXtqgnCXj6CF3P7rP3CinWth6X4uc-wJKQit40FyNTd6uSJtXYlBkLzj8zfgl5HRlvdP36s5tFsyfsi-TYmrHs5Tvto9M6WbJJikl7n3MlptW_r46ahmweKo6rZR9tYF74fnZdJyJcy8dHq/s16000/IMG-20250911-WA0048.jpg" alt="Duvan">
+                                <div class="carta-info">
+                                    <h3>Duvan</h3>
+                                    <p>Técnico en Render</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Desarrollo de Software -->
+                    <div class="carta-miembro" data-programa="software" onclick="openMemberModal('dev1')">
+                        <div class="carta-inner">
+                            <div class="carta-front">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5DEEFdNHm0GOb6fN7gCYqzoMNm05iz22l19SBif01Ao6P38W2gGxEW1Z5Lw_ej-Mdgr5ySpzFGJWFEiHYjhmaHVJhgtN4J4VWsjRNBYhZUEwkLzLJ40aaHC9q1BuPRXVrchyphenhyphenIrRI9qzI5R1a-xSHGT5v7FyGjUYq-xAfXGjuLQTuxnPCsw0owEfwQ3HM/s16000/FICHA-GERALDINE.png" alt="Geraldine">
+                                <div class="carta-info">
+                                    <h3>Geraldine</h3>
+                                    <p>Desarrolladora de Software</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Miembro -->
+    <div id="memberModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeMemberModal()">&times;</span>
+            <div id="memberModalContent">
+                <!-- Contenido dinámico del miembro -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                         <img src="logo 1.png" alt="IN-HOUSE52 Logo" height='90' class="logo">
+                    </div>
+                    <p>Agencia interna de comunicaciones publicitarias del SENA CGMLTI</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="equipo.html">Equipo</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>SENA CGMLTI</p>
+                    <p>Bogotá, Colombia</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 IN-HOUSE52 SENA CGMLTI. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="equipo.js"></script>
+</body>
+</html>

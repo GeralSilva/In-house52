@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Proyectos - IN-HOUSE52</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="galeria.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.jpg"> 
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo 1.png" alt="IN-HOUSE52 Logo" class="logo">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="index.html#programas" class="nav-link">Programas</a></li>
+                <li class="nav-item"><a href="index.html#servicios" class="nav-link">Servicios</a></li>
+                <li class="nav-item"><a href="galeria.html" class="nav-link active">Galería</a></li>
+                <li class="nav-item"><a href="equipo.html" class="nav-link">Equipo</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header de Galería -->
+    <section class="galeria-header">
+        <div class="container">
+            <h1>Galería de Proyectos</h1>
+            <p>Descubre nuestros trabajos más destacados y la evolución de IN-HOUSE52 a través de los años</p>
+        </div>
+    </section>
+
+    <!-- Filtros -->
+    <section class="filtros-section">
+        <div class="container">
+            <div class="filtros-container">
+                <button class="filtro-btn active" onclick="filterProjects('todos')">Todos</button>
+                <button class="filtro-btn" onclick="filterProjects('branding')">Branding</button>
+                <button class="filtro-btn" onclick="filterProjects('web')">Desarrollo Web</button>
+                <button class="filtro-btn" onclick="filterProjects('grafico')">Diseño Gráfico</button>
+                <button class="filtro-btn" onclick="filterProjects('multimedia')">Multimedia</button>
+                <button class="filtro-btn" onclick="filterProjects('fotografia')">Fotografía</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Proyectos -->
+    <section class="proyectos-galeria">
+        <div class="container">
+            <div class="proyectos-grid" id="proyectosGrid">
+                <!-- Proyecto 1 -->
+                <div class="proyecto-item" data-categoria="branding" data-año="2025">
+                    <div class="proyecto-card">
+                        <div class="proyecto-imagen">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwTQbdeHZ4Ge9HenyAzJHZ9RCNgP9vMv1I96bj2fBdUjr1qvYldjk0zWYhMNUbbZfmC3wpy31fi3R0Aa7RIqzxnODPX_L-C7mVGrGQFS7a-cyWhCKCT6fa6Z8LPd9KPjnhKThoTsKpiz6HD2iCh31p4ajPsEfp-bGi7Vz5LA2R37WuclQMNdNaT6deYfo/s16000/IMG-20251001-WA0013.jpg" alt="Identidad Visual SENA">
+                            <div class="proyecto-overlay">
+                                <div class="proyecto-info">
+                                    <h3>Identidad Visual SENA</h3>
+                                    <p>Rediseño completo de la identidad visual institucional</p>
+                                    <div class="proyecto-tags">
+                                        <span class="tag">Branding</span>
+                                        <span class="tag">2025</span>
+                                    </div>
+                                </div>
+                                <button class="ver-proyecto" onclick="openProjectModal('proyecto1')">Ver Proyecto</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="proyecto-item" data-categoria="web" data-año="2025">
+                    <div class="proyecto-card">
+                        <div class="proyecto-imagen">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj60CxxJISQjDVHgYPjC0984bTVQ6YOXqN6ZBZlnqYwCmP-PAWFs0JuD542omX8kHN6F52yw8NhCvr543xvEQfTtyE58j43ldPCtoYbdl4Dka73OTzMTleg3FK0L_9KT304boUqgi7fypEZ2BHps_bAocqEls6ZG8XhiQL6DKhU2Gt_1Qs6y3vR1_6L6KE/s16000/IMG-20251001-WA0014.jpg" alt="Portal Web CGMLTI">
+                            <div class="proyecto-overlay">
+                                <div class="proyecto-info">
+                                    <h3>Portal Web CGMLTI</h3>
+                                    <p>Desarrollo de portal institucional responsive</p>
+                                    <div class="proyecto-tags">
+                                        <span class="tag">Desarrollo Web</span>
+                                        <span class="tag">2025</span>
+                                    </div>
+                                </div>
+                                <button class="ver-proyecto" onclick="openProjectModal('proyecto2')">Ver Proyecto</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="proyecto-item" data-categoria="grafico" data-año="2023">
+                    <div class="proyecto-card">
+                        <div class="proyecto-imagen">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1OLcTEIVhOfTT7qwD1OaLhO7vAe2X_TG-ZsEVCCEnr_Ygj5E5BsiaoDKHZRdcTyggUkE1_sxe63hsDyFLr0-ZVDu0NfZ_qhtjRUdZ-NyBuV_rgnqPVHv6EzvyTLNE1P3-KG_BKeY6rHYmCDPkEExFrChczi3TQjJio58EqGVRQkMI8tDvnUHia7tZl34/s16000/IMG-20251001-WA0015.jpg" alt="Campaña Digital">
+                            <div class="proyecto-overlay">
+                                <div class="proyecto-info">
+                                    <h3>Campaña Digital SENA</h3>
+                                    <p>Estrategia de comunicación para redes sociales</p>
+                                    <div class="proyecto-tags">
+                                        <span class="tag">Diseño Gráfico</span>
+                                        <span class="tag">2023</span>
+                                    </div>
+                                </div>
+                                <button class="ver-proyecto" onclick="openProjectModal('proyecto3')">Ver Proyecto</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 4 -->
+                <div class="proyecto-item" data-categoria="multimedia" data-año="2023">
+                    <div class="proyecto-card">
+                        <div class="proyecto-imagen">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiv_-FEh4tm9vIP_nHiyBxMaYAvYTBflGbjdFEDIUjtwTHfUXyv_suTMl37sZz8qtquv6hVsqCaFV66Yf8x5CWEOt92nmwHS4z3SNVUKpqtK4DgFNm5btQtdL2mgERZAQurffdd-SquIE9b22_F7su8EEAoL8SaYRINftJu6_pTiBf0ddpQmBi4WN-3OW0/s16000/IMG-20251001-WA0016.jpg" alt="Video Institucional">
+                            <div class="proyecto-overlay">
+                                <div class="proyecto-info">
+                                    <h3>Video Institucional</h3>
+                                    <p>Producción audiovisual para promoción del centro</p>
+                                    <div class="proyecto-tags">
+                                        <span class="tag">Multimedia</span>
+                                        <span class="tag">2023</span>
+                                    </div>
+                                </div>
+                                <button class="ver-proyecto" onclick="openProjectModal('proyecto4')">Ver Proyecto</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 5 -->
+                <div class="proyecto-item" data-categoria="fotografia" data-año="2022">
+                    <div class="proyecto-card">
+                        <div class="proyecto-imagen">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLfVL8RQYr3XJZDoMWeGwet2HKpOcf37Xa7XgbA-O2z1GQdzSiQxGP3kwUTwtSLidYr3309TsVenT_q1kiBpiljh1ioLORb-J3O1Nne5QCsLcmKG1C_RL8oLKoh9U6KbkASqLq8nBxgXXQEvoXtBvbKn0FhVtbw6shvaXq2MPq8wTpks0YiIKOOWUvGj4/s16000/IMG-20251001-WA0017.jpg" alt="Sesión Corporativa">
+                            <div class="proyecto-overlay">
+                                <div class="proyecto-info">
+                                    <h3>Sesión Corporativa</h3>
+                                    <p>Fotografía profesional para equipo directivo</p>
+                                    <div class="proyecto-tags">
+                                        <span class="tag">Fotografía</span>
+                                        <span class="tag">2022</span>
+                                    </div>
+                                </div>
+                                <button class="ver-proyecto" onclick="openProjectModal('proyecto5')">Ver Proyecto</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 6 -->
+                <div class="proyecto-item" data-categoria="branding" data-año="2022">
+                    <div class="proyecto-card">
+                        <div class="proyecto-imagen">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWwQJo_Wzbzvs7H0JkXkSTzqBobLZ0-OnCUz3NWxDHQZrUZ8fhFfD2D59LPEdWEbaNd4sDGY1EOQ1MsCb2txXf4a6FdSELNMzMzklBAkPibkCjWeOSCLhNt8Kv1ewICCOVTsBmlu_FJnuEqjyrBgk_jTBSGP9YWr5KnEUVx957XlYSk8I1lHR_l-Ame3U/s16000/IMG-20251001-WA0020.jpg" alt="Manual de Marca">
+                            <div class="proyecto-overlay">
+                                <div class="proyecto-info">
+                                    <h3>Manual de Marca</h3>
+                                    <p>Guía completa de aplicación de identidad visual</p>
+                                    <div class="proyecto-tags">
+                                        <span class="tag">Branding</span>
+                                        <span class="tag">2022</span>
+                                    </div>
+                                </div>
+                                <button class="ver-proyecto" onclick="openProjectModal('proyecto6')">Ver Proyecto</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 7 -->
+                <div class="proyecto-item" data-categoria="web" data-año="2021">
+                    <div class="proyecto-card">
+                        <div class="proyecto-imagen">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFvd6N-0qUQWUtb1yLJxClDwdylqEcUH-0GDiAPiIVh2GmcLUMi1yDlHFCgpPFromQm3p2bwP7nzWdNjlw9t_5c4CImK7zONqyN_SGACta7P7Fs0Qnm-1WcGFp8AQb1eumxjsYRl4OyCE_THtfQHZEHtwnSCujUQ00VSOp1Xqeu-S1lQFgwuFUcnriWts/s16000/IMG-20251001-WA0018.jpg" alt="App Móvil">
+                            <div class="proyecto-overlay">
+                                <div class="proyecto-info">
+                                    <h3>App Móvil Educativa</h3>
+                                    <p>Aplicación para gestión de aprendices</p>
+                                    <div class="proyecto-tags">
+                                        <span class="tag">Desarrollo Web</span>
+                                        <span class="tag">2021</span>
+                                    </div>
+                                </div>
+                                <button class="ver-proyecto" onclick="openProjectModal('proyecto7')">Ver Proyecto</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 8 -->
+                <div class="proyecto-item" data-categoria="grafico" data-año="2021">
+                    <div class="proyecto-card">
+                        <div class="proyecto-imagen">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmdebs5zTULAypS3Qsp4__FarcC2Jg6yPzsV3KS1I1y6ws49aDediQK6Y3O1gdcb5orcuYtm5DUx3exkJJjmVps-gYaqKL7eHaom_GmuGYBVuo7qJw6JgB0xMoq1_uIKhooeYjVZ9Xj639cbDhAE8-e-rtt9li_A6A5Wt3IquQgrvCY5NM_eCrXZG3ilk/s16000/IMG-20251001-WA0019.jpg">
+                            <div class="proyecto-overlay">
+                                <div class="proyecto-info">
+                                    <h3>Material Impreso</h3>
+                                    <p>Diseño de folletos y material promocional</p>
+                                    <div class="proyecto-tags">
+                                        <span class="tag">Diseño Gráfico</span>
+                                        <span class="tag">2021</span>
+                                    </div>
+                                </div>
+                                <button class="ver-proyecto" onclick="openProjectModal('proyecto8')">Ver Proyecto</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para ver proyecto -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProjectModal()">&times;</span>
+            <div id="modalContent">
+                <!-- El contenido se carga dinámicamente -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="logo 1.png" alt="IN-HOUSE52 Logo" height='100' class="logo">
+                    
+                    <p>Agencia interna de comunicaciones publicitarias del SENA CGMLTI</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html#programas">Programas</a></li>
+                        <li><a href="index.html#servicios">Servicios</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="equipo.html">Equipo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>SENA CGMLTI</p>
+                    <p>Centro de Gestión de Mercados, Logística y Tecnologías de la Información</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 IN-HOUSE52 - SENA CGMLTI. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="galeria.js"></script>
+</body>
+</html>
