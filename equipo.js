@@ -11,7 +11,7 @@ const miembrosData = {
         descripcion: "Coordinadora general de IN-HOUSE52, responsable de la gestión estratégica y la articulación entre las diferentes áreas del SENA CGMLTI.",
         experiencia: ["Gestión de equipos multidisciplinarios", "Coordinación de proyectos institucionales", "Planificación estratégica"],
         habilidades: ["Liderazgo", "Gestión de proyectos", "Comunicación efectiva", "Planificación estratégica"],
-        proyectos: ["Coordinación IN-HOUSE52", "Gestión de proyectos institucionales", "Articulación académica"],
+        proyectos: ["Coordinación inHOUSE 52", "Gestión de proyectos institucionales", "Articulación académica"],
         contacto: { email: "comunicaciones9303@sena.edu.co", linkedin: "#", telefono: "+57 300 123 4567" }
     },
     coord1: {
@@ -174,10 +174,10 @@ const miembrosData = {
     },
     
     // Animación 3D
-    ani1: {
+    com4: {
         nombre: "Nathaly",
         cargo: "Animadora 3D",
-        programa: "Animación 3D",
+        programa: "Diseño y Estrategia",
         foto: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhY5sI4xzMEZoE_ht6BB3FRpOU2redIIcE8GsZHHNFFnCxQwxtVabrc349cqvPEC0rTl6psjIiwH8o3Eq99uxyJHyLdbK5dgKdFrU7gS7YHD3a8-NuBDAJsZb1vxKXWwusMT771iWwGHUBX1z3ykzRjIg8OllEC5cHTvqaQW-RCv8FCEwobC34ts5Msv-jC/s16000/IMG-20250911-WA0049.jpg",
         descripcion: "Animadora 3D especializada en modelado, texturizado y animación de personajes para proyectos del SENA CGMLTI.",
         experiencia: ["Animación 3D", "Modelado de personajes", "Texturizado digital"],
@@ -188,7 +188,7 @@ const miembrosData = {
     ani2: {
         nombre: "Nicolas",
         cargo: "Modelador 3D",
-        programa: "Animación 3D",
+        programa: "Diseño y Estrategia",
         foto: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivwW8YOxT29XBxBbp88LLRwlQc2ZX03XSw9Vh-tP4xGUakOSCUkxAn3p4NmhQ2NhRsX1nxvRynU2y1eOLqudofP0Y-mU2hXB1-ItwLPTK08OQ6p0DMBqSaLgzG8YN_e-eiD04V9Xm5CKhvhUW9zzJtvVSjV_RO06r9C0-PJQ5gwFpqgCyOGSalgskMJSKZ/s16000/IMG-20250911-WA0041.jpg",
         descripcion: "Modelador 3D especializado en creación de assets y entornos virtuales para proyectos de animación del SENA CGMLTI.",
         experiencia: ["Modelado 3D", "Creación de assets", "Entornos virtuales"],
@@ -199,7 +199,7 @@ const miembrosData = {
     ani3: {
         nombre: "Clara",
         cargo: "Especialista en VFX",
-        programa: "Animación 3D",
+        programa: "Diseño y Estrategia",
         foto: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhw_UiL3plsQueEBFE1Si_x8H0xCZ_eBpYQ_k94GHIJBaxcL-u1t56dHqogTXrnLPlKdLk_KIN80cdlQkMJolQVK3m9AShMJJZueuAT17RRYl3BJUoNNX_B1bYJ8px7pNZt4DjAkRG26lyuuFRvmbgoECmgjf4LKBH0pb4JZAKPTwR85aKqU2hDRzu_4_J9/s16000/IMG-20250911-WA0043.jpg",
         descripcion: "Especialista en efectos visuales y postproducción digital para proyectos audiovisuales del SENA CGMLTI.",
         experiencia: ["Efectos visuales", "Postproducción digital", "Composición avanzada"],
@@ -210,7 +210,7 @@ const miembrosData = {
     ani4: {
         nombre: "Sebastian",
         cargo: "Director de Arte 3D",
-        programa: "Animación 3D",
+        programa: "Diseño y Estrategia",
         foto: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIxrzvAS69QukShmqbP-rjE33MFbLq1nxX9823dBOUaBJSoX3EitOzVEF9HZzQR5UgXBKPSu-6H4-Qyq44ZX-vQtHTY6CvQtp_6e9qj67aLRBS2kJOFc7CKp0MAcy2KM8LClwGrh_rSuMC76jCwabUIeut-N7jszGDFO1PyAjSuHDd4dNRTo6TBsiG0plt/s16000/IMG-20250911-WA0047.jpg",
         descripcion: "Director de arte especializado en conceptualización visual y dirección artística de proyectos 3D del SENA CGMLTI.",
         experiencia: ["Dirección de arte", "Conceptualización visual", "Dirección artística"],
@@ -221,7 +221,7 @@ const miembrosData = {
     ani5: {
         nombre: "Duvan",
         cargo: "Técnico en Render",
-        programa: "Animación 3D",
+        programa: "Diseño y Estrategia",
         foto: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjgJiEMS_4jOgdavbD2JKu2D4NymZ7u4xfEy-F-VBd0DdpQfXtqgnCXj6CF3P7rP3CinWth6X4uc-wJKQit40FyNTd6uSJtXYlBkLzj8zfgl5HRlvdP36s5tFsyfsi-TYmrHs5Tvto9M6WbJJikl7n3MlptW_r46ahmweKo6rZR9tYF74fnZdJyJcy8dHq/s16000/IMG-20250911-WA0048.jpg",
         descripcion: "Técnico especializado en render y optimización de procesos de producción 3D para proyectos del SENA CGMLTI.",
         experiencia: ["Render técnico", "Optimización de procesos", "Gestión de producción"],
@@ -234,7 +234,7 @@ const miembrosData = {
     dev1: {
         nombre: "Geraldine",
         cargo: "Desarrolladora de Software",
-        programa: "Desarrollo de Software",
+        programa: "Diseño y Estrategia",
         foto: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEin7wYVoCxJT7_rewxXkwae65N1o3NrXmOoqAS2GtGNUtd6WCS3Ec6-EZWt7UWgQdXOM3h6izu0T6TWKVCsKyskxiL5TlmpiClYFQnzL_9r0KtXHe53r4A2hbiqlliSMgqPj_Qb6OcRyXgHInJZZTu7l0vdTPUoOi5p16zF6hI0lPB_pulKyJuP5R_sGef7/s16000/Imagen%20de%20WhatsApp%202025-09-12%20a%20las%2009.43.02_619ba149.jpg",
         descripcion: "Desarrolladora de software especializada en aplicaciones web y desarrollo de plataformas digitales para el SENA CGMLTI.",
         experiencia: ["Desarrollo web", "Programación", "Gestión de proyectos de software"],
