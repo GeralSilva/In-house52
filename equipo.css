@@ -545,33 +545,6 @@
 .carta-miembro:hover {
     animation: cardHover 0.3s ease forwards;
 }
-
-/* Efectos de carga */
-.carta-miembro {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 0.6s ease forwards;
-}
-
-.carta-miembro:nth-child(1) { animation-delay: 0.1s; }
-.carta-miembro:nth-child(2) { animation-delay: 0.2s; }
-.carta-miembro:nth-child(3) { animation-delay: 0.3s; }
-.carta-miembro:nth-child(4) { animation-delay: 0.4s; }
-.carta-miembro:nth-child(5) { animation-delay: 0.5s; }
-.carta-miembro:nth-child(6) { animation-delay: 0.6s; }
-.carta-miembro:nth-child(7) { animation-delay: 0.7s; }
-.carta-miembro:nth-child(8) { animation-delay: 0.8s; }
-.carta-miembro:nth-child(9) { animation-delay: 0.9s; }
-.carta-miembro:nth-child(10) { animation-delay: 1.0s; }
-.carta-miembro:nth-child(n+11) { animation-delay: 1.1s; }
-
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 /* Estilos para impresión */
 @media print {
     .equipo-filtros,
@@ -589,4 +562,16 @@
         break-inside: avoid;
         page-break-inside: avoid;
     }
+}
+
+/* Mantener imagen visible al hover */
+.carta-miembro:hover .carta-front,
+.carta-miembro:hover .carta-front img {
+    opacity: 1;
+    filter: none;
+}
+
+/* Evitar fondos semitransparentes en la carta al hover */
+.carta-miembro:hover .carta-front {
+    background: #ffffff;
 }

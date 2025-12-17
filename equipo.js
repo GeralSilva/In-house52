@@ -93,6 +93,17 @@ const miembrosData = {
         proyectos: ["Proyectos formativos", "Práctica en comunicación", "Desarrollo de competencias"],
         contacto: { email: "ana.martinez@inhouse.com", linkedin: "#", telefono: "+57 300 123 4571" }
     },
+    com4: {
+        nombre: "Andrea",
+        cargo: "Diseñadora Gráfica",
+        programa: "Comunicación Comercial",
+        foto: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZsD9JmtfQEZmzlVtcg5s9ARUA5L9HlKLPTIJsp3mChGHi-tKjFr1BvzLpPdJkvcceCzlmR1rmU4bz8rjbG_lPXl8v2JKlrbBl2zFcby4-lLKwIuxAX6i7krpWSLv1YA0Cwqu_Rft3YcnqjSZ9f5r7aUq0ccLnl-7vGvlxBqksGS4Rzr9FLcskZ0TvDKDh/s16000/ANDREA-FICHA-2025-2.jpg",
+        descripcion: "Especialista en comunicación comercial con enfoque en estrategias de marketing y desarrollo de campañas publicitarias para el SENA CGMLTI.",
+        experiencia: ["Formación en comunicación comercial", "Desarrollo de competencias", "Práctica profesional"],
+        habilidades: ["Comunicación", "Marketing básico", "Desarrollo de contenido", "Atención al cliente"],
+        proyectos: ["Proyectos formativos", "Práctica en comunicación", "Desarrollo de competencias"],
+        contacto: { email: "ana.martinez@inhouse.com", linkedin: "#", telefono: "+57 300 123 4571" }
+    },
    
     // Medios Audiovisuales
     mul1: {
@@ -139,6 +150,17 @@ const miembrosData = {
         proyectos: ["Audio para videos institucionales", "Producción de podcasts", "Audio para eventos"],
         contacto: { email: "brianguns@gmail.com", linkedin: "#", telefono: "+57 300 123 4578" }
     },
+    mul9: {
+        nombre: "Laura",
+        cargo: "Especialista en Audio",
+        programa: "Medios Audiovisuales",
+        foto: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglT0_tto5iD1FlhnoZ3tcKyyEB0iB1G-h-_eImmY_Ty8SUl9WzQOOsEMCMUiRprmT6C9U-CqzUYXELlHySx5oIjJqNkAGvP5igt_9bOL1cNITKbA6SQTJQmPt_nDT1aBmbqitzyEcUNjxMFVtCuZgL4mTyeE5nmsHL0Y3z5ZaCRnVFDTXibv_e8o0cU72G/s16000/WhatsApp%20Image%202025-12-17%20at%2010.42.57%20AM.jpeg",
+        descripcion: "Especialista en audio encargada de la producción y postproducción de audio para proyectos del SENA CGMLTI.",
+        experiencia: ["Producción de audio", "Postproducción de audio", "Grabación profesional"],
+        habilidades: ["Producción de audio", "Mezcla", "Masterización", "Grabación"],
+        proyectos: ["Audio para videos institucionales", "Producción de podcasts", "Audio para eventos"],
+        contacto: { email: "Laura@gmail.com", linkedin: "#", telefono: "+57 300 123 4578" }
+    },
     mul5: {
         nombre: "Jhon",
         cargo: "Camarógrafo",
@@ -172,9 +194,20 @@ const miembrosData = {
         proyectos: ["Soporte técnico para eventos", "Mantenimiento de equipos", "Configuración audiovisual"],
         contacto: { email: "camilo82@msn.com", linkedin: "#", telefono: "+57 300 123 4581" }
     },
+    mul8: {
+        nombre: "Camilo",
+        cargo: "Técnico Audiovisual",
+        programa: "Medios Audiovisuales",
+        foto: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicCZNwLXUCHHGkh-NWcvckayI3u8rP7YgftVm8I71S0rk84dmJ6JdGYITyagVf6SuvYbax0xBHIpOcNmGaLn9cutukZpyfDqT6NJd90VIvCzL735Xk6Rw31f9p_ZMOP2EEsa3PmuV-ng2YiDLpqCnJfNN8UCNXRZ4rTuHE2bOVPoe1DAQlp30lVAKmT_A0/s16000/LAURA-FICHA-2025-2.jpg",
+        descripcion: "Técnico audiovisual encargado del soporte técnico y mantenimiento de equipos para proyectos del SENA CGMLTI.",
+        experiencia: ["Soporte técnico audiovisual", "Mantenimiento de equipos", "Configuración técnica"],
+        habilidades: ["Soporte técnico", "Mantenimiento de equipos", "Configuración", "Troubleshooting"],
+        proyectos: ["Soporte técnico para eventos", "Mantenimiento de equipos", "Configuración audiovisual"],
+        contacto: { email: "camilo82@msn.com", linkedin: "#", telefono: "+57 300 123 4581" }
+    },
     
     // Animación 3D
-    com4: {
+    ani1: {
         nombre: "Nathaly",
         cargo: "Animadora 3D",
         programa: "Diseño y Estrategia",
@@ -292,11 +325,11 @@ function filterTeam(programa) {
     const activeBtn = Array.from(filtros).find(btn => {
         const btnText = btn.textContent.toLowerCase();
         return (programa === 'todos' && btnText === 'todos') ||
-               (programa === 'comunicacion' && btnText.includes('comunicación')) ||
-               (programa === 'multimedia' && (btnText.includes('multimedia') || btnText.includes('audiovisuales'))) ||
+               (programa === 'comunicacion' && (btnText.includes('comunicación') || btnText.includes('diseño') || btnText.includes('estrategia'))) ||
+               (programa === 'multimedia' && (btnText.includes('multimedia') || btnText.includes('audiovisuales') || btnText.includes('audiovisual'))) ||
                (programa === 'animacion' && btnText.includes('animación')) ||
                (programa === 'software' && btnText.includes('software')) ||
-               (programa === 'coordinacion' && btnText.includes('coordinación'));
+               (programa === 'coordinacion' && (btnText.includes('coordinación') || btnText.includes('líderes')));
     });
     
     if (activeBtn) {
@@ -323,6 +356,18 @@ function filterTeam(programa) {
                 miembro.classList.add('hidden');
                 miembro.classList.remove('filtering-out');
             }, 300);
+        }
+    });
+    
+    // Filtrar títulos de subárea
+    const subareaTitles = document.querySelectorAll('.subarea-title');
+    subareaTitles.forEach(title => {
+        const titlePrograma = title.dataset.programa || 'comunicacion';
+        const showTitle = programa === 'todos' || titlePrograma === programa;
+        if (showTitle) {
+            title.classList.remove('hidden');
+        } else {
+            title.classList.add('hidden');
         }
     });
     
